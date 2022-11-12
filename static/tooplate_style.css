@@ -1,0 +1,656 @@
+/**
+/*	Preloader
+/* ==========================================*/
+
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/*Battery*/
+.loder-box {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 1px;
+  height: 100px;
+  left: 50%;
+  margin-left: -64px;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  width: 128px;
+}
+
+.battery{
+    width: 60px;
+    height: 25px;
+    top: 35%;
+    border: 1px #2e2e2e solid;
+    border-radius: 2px;
+    position: relative;
+    -webkit-animation: charge 3s linear infinite;
+       -moz-animation: charge 3s linear infinite;
+            animation: charge 3s linear infinite;
+    margin: 0 auto;
+}
+
+.battery:after {
+  background-color: #2E2E2E;
+  border-radius: 0 1px 1px 0;
+  content: "";
+  height: 10px;
+  position: absolute;
+  right: -5px;
+  top: 7px;
+  width: 3px;
+}
+
+@-webkit-keyframes charge{
+    0%{box-shadow: inset 0px 0px 0px #fd0202;}
+    100%{box-shadow: inset 60px 0px 0px #1b6fbb}
+}
+
+@-moz-keyframes charge{
+    0%{box-shadow: inset 0px 0px 0px #fd0202;}
+    100%{box-shadow: inset 60px 0px 0px #1b6fbb}
+}
+
+@keyframes charge{
+    0%{box-shadow: inset 0px 0px 0px #fd0202;}
+    100%{box-shadow: inset 60px 0px 0px #1b6fbb}
+}
+
+
+/*
+VicTech Electronics Official Website
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	background-color: #ffffff;
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+.home {
+	background-image: url(images/tooplate_home_body.jpg)
+}
+
+.subpage {
+	background-image: url(images/tooplate_subpage_body.jpg)
+}
+
+a,
+a:link,
+a:visited {
+	color: #1b6fbb;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #0f3252;
+}
+
+h1 {
+	font-size: 34px;
+	font-weight: normal;
+	margin: 0 0 30px 0;
+	padding: 5px 0;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: normal;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+h3 {
+	font-size: 21px;
+	margin: 0 0 15px;
+	padding: 0;
+	font-weight: normal;
+}
+
+h4 {
+	font-size: 18px;
+	margin: 0 0 15px;
+	padding: 0;
+}
+
+h5 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+h6 {
+	font-size: 14px;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.cleaner {
+	clear: both
+}
+
+.h10 {
+	height: 10px
+}
+
+.h20 {
+	height: 20px
+}
+
+.h30 {
+	height: 30px
+}
+
+.h40 {
+	height: 40px
+}
+
+.h50 {
+	height: 50px
+}
+
+.h60 {
+	height: 60px
+}
+
+.float_l {
+	float: left;
+}
+
+.float_r {
+	float: right;
+}
+
+.image_wrapper {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 4px;
+	background: #fff;
+	margin-bottom: 5px;
+}
+
+.image_fl {
+	float: left;
+	margin: 3px 15px 0 0;
+}
+
+.image_fr {
+	float: right;
+	margin: 3px 0 0 15px;
+}
+
+blockquote {
+	font-style: italic;
+	margin-left: 10px;
+}
+
+cite {
+	font-weight: bold;
+	color: #000;
+}
+
+cite span {
+	color: #333;
+}
+
+em {
+	color: black;
+}
+
+.tooplate_list {
+	margin: 20px 0 20px 20px;
+	padding: 0;
+	list-style: none;
+}
+
+.tooplate_list li {
+	color: #f48a06;
+	background: transparent url(images/tooplate_list.jpg) no-repeat scroll 0 3px;
+	margin: 0 0 10px;
+	padding: 3px 0 3px 20px;
+	line-height: 1em;
+}
+
+.tooplate_list li a {
+	color: #f48a06;
+}
+
+.tooplate_list li a:hover {
+	color: #f48a06;
+}
+
+#tooplate_wrapper {
+	width: 940px;
+	padding: 0 20px;
+	margin: 0 auto;
+	background: url(images/tooplate_wrapper.png) repeat-y left;
+}
+
+#tooplate_sidebar {
+	float: left;
+	width: 260px;
+	padding-bottom: 40px;
+	background: #e1e1e1 url(images/tooplate_header_bg.jpg) top no-repeat;
+}
+
+
+.logo {
+	position: relative;
+	left: 70px;
+	height: 120px;
+	width: 120px;
+	margin-top: 8px;
+	border-radius: 50%;
+	background-color: #0f3252;
+}
+
+#logo_img {
+	height: 90px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	animation-name: logo_img;
+	animation-duration: 5s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+@keyframes logo_img {
+	0% {
+		transform: rotateX(30deg);
+	}
+
+	15% {
+		transform: rotateY(90deg);
+	}
+
+	30% {
+		transform: rotateZ(270deg);
+	}
+
+	45% {
+		transform: rotate3D(180deg, 270deg, 180deg);
+	}
+
+	50% {
+		transform: rotateY(0);
+	}
+}
+
+#site_title span {
+	color: #1b6fbb;
+}
+
+#site_title a:hover {
+	text-decoration: none;
+}
+
+#home_service {
+	clear: both;
+	padding: 0 5px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.home_service_box {
+	position: relative;
+	display: block;
+	width: 155px;
+	height: 50px;
+	padding: 15px 15px 15px 80px;
+	background: url(images/tempatemo_service_bg.jpg) no-repeat;
+	margin-bottom: 5px;
+	font-size: 11px;
+	line-height: 1.2em;
+}
+
+.home_service_box h5 a {
+	color: rgb(185, 160, 20);
+	margin-bottom: 10px;
+}
+
+.home_service_box span.design, span.implement, span.repair, span.supply {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 15px;
+	top: 16px;
+}
+
+.home_service_box span.design {
+	background: url(images/design.png);
+}
+
+.home_service_box span.implement{
+	background: url(images/implement.png);
+}
+
+.home_service_box span.repair {
+	background: url(images/repair.png);
+}
+
+.home_service_box span.supply {
+	background: url(images/supply.png);
+}
+
+.sidebar_box {
+	padding: 15px;
+	border-bottom: 1px solid #999;
+}
+
+.sidebar_box h4 {
+	color: #0f3252;
+}
+
+.sbb_last {
+	border-bottom: none;
+}
+
+.sidebar_box form .newsletter_email {
+	width: 218px;
+	padding: 5px;
+	margin: 10px 0;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background: #F2F2F2;
+	border: 1px solid #AAA;
+}
+
+#newsletter_box form #submit_subscribe {
+	cursor: pointer;
+	float: right;
+	padding: 8px 12px;
+	background: #F2F2F2;
+	border: 1px solid #AAA;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+}
+
+#tooplate_main {
+	float: right;
+	width: 640px;
+}
+
+#tooplate_menu {
+	width: 640px;
+	height: 60px;
+	margin-bottom: 30px;
+}
+
+#tooplate_menu ul {
+	height: 40px;
+	margin: 0 0 40px;
+	padding: 20px 0 0;
+	list-style: none;
+}
+
+#tooplate_menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+#tooplate_menu ul li a {
+	float: left;
+	display: block;
+	padding-left: 20px;
+	margin-right: 40px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #a2c8eb;
+	font-weight: bold;
+	background: url(images/tooplate_menu.png) no-repeat left center;
+}
+
+#tooplate_menu ul li a:hover,
+#tooplate_menu ul .current {
+	color: #fff;
+	background: url(images/tooplate_menu_hover.png) no-repeat left center;
+}
+
+#featured_project {
+	clear: both;
+	height: 270px;
+	width: 640px;
+	color: #fff;
+	margin: 50px 0 80px;
+}
+
+#featured_project h1 {
+	margin-left: 30px;
+	color: rgb(185, 160, 20);
+	text-shadow: 2px 2px 3px #000;
+}
+
+#featured_project h1 b {
+	color: #1b6fbb;
+}
+
+#featured_project h1 span {
+	font-size: 25px;
+	color: #dce5ed;
+}
+
+#featured_project h4 {
+	color: #dce5ed
+}
+
+#featured_project p {
+	margin-bottom: 15px;
+	color: #588ab7
+}
+
+#featured_project a {
+	color: #fff;
+	font-weight: bold
+}
+
+#featured_project img {
+	float: left;
+	width: 400px;
+	height: 200px;
+	padding: 8px;
+	margin-right: 40px;
+}
+
+#tooplate_content {
+	clear: both;
+	padding-bottom: 40px;
+}
+
+#tooplate_content h2 {
+	line-height: 30px;
+}
+
+#tooplate_content p {
+	margin-bottom: 15px;
+}
+
+#content_title_box {
+	clear: both;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 80px;
+}
+
+#content_title_box h2 {
+	color: #fff;
+}
+
+.content_box {
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+.cb_last {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.col_w300 {
+	width: 300px;
+}
+
+.home_newsbox {
+	margin-bottom: 20px;
+}
+
+.service_box {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.sb_last {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.service_box img {
+	float: left;
+	width: 48px;
+	height: 48px;
+}
+
+.service_box .right {
+	float: right;
+	width: 560px;
+}
+
+.service_box ol li {
+	list-style: decimal-leading-zero;
+	margin-bottom: 5px;
+}
+
+/* gallery */
+
+#gallery {
+	clear: both;
+}
+
+#gallery .gallery_box {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #ccc;
+}
+
+#gallery .gallery_box .left {
+	float: left;
+	width: 280px;
+}
+
+#gallery .gallery_box .left img {
+	width: 270px;
+	height: 130px;
+	border: 2px solid #000;
+	padding: 1px;
+	background: #64808b;
+}
+
+#gallery .gallery_box .right {
+	float: right;
+	width: 330px;
+}
+
+/* end of gallery */
+
+#contact_form {
+	width: 330px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#contact_form form .input_field {
+	width: 280px;
+	padding: 8px;
+	background: #F2F2F2;
+	border: 1px solid #AAA;
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#contact_form form label {
+	display: block;
+	width: 100px;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #333;
+}
+
+#contact_form form textarea {
+	width: 380px;
+	height: 200px;
+	background: #F2F2F2;
+	border: 1px solid #AAA;
+	padding: 8px;
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#contact_form form .submit_btn {
+	margin: 10px 0px;
+	padding: 8px 16px;
+	background: #F2F2F2;
+	border: 1px solid #AAA;
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#tooplate_footer_wrapper {
+	clear: both;
+	width: 100%;
+	border-top: 5px solid #64a6e3;
+	background: #0f3252;
+}
+
+#tooplate_footer {
+	width: 940px;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+	color: #64a6e3;
+}
+
+#tooplate_footer a {
+	color: #b6dcff
+}
